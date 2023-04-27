@@ -31,7 +31,7 @@ if (age < juniorAge) {
 
 
 // genera messaggio da restituire
-messaggio = `il costo del tuo biglietto è  ${price} Euro`;
+messaggio = `il costo del tuo biglietto è  ${price.toFixed(2)} Euro`;
 
 // restituisci messaggio finale all utente
 
