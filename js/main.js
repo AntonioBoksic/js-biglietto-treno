@@ -21,10 +21,10 @@ fullPrice = pricePerKm * km;
 
 // stabilire prezzo finale in base a sconto età
 
-if (age < 18) {
-    price = fullPrice * (1-0.2);
-} else if (age >= 65) {
-    price = fullPrice * (1-0.4);
+if (age < juniorAge) {
+    price = fullPrice * (1- juniorDiscount);
+} else if (age >= seniorAge) {
+    price = fullPrice * (1-seniorDiscount);
 } else {
     price = fullPrice;
 };
